@@ -1,5 +1,4 @@
-function power(n, x){
-    let result = 0;
-    if (x === 0) return result;
-    return result *= n; 
+function power(base, exponent) {
+    if (exponent === 0) return 1;
+    return base * power(base, exponent - 1);
 }
